@@ -3,6 +3,9 @@
 #outerContainer {
     max-width: 95%;
     margin: 0 auto;
+    background-color: #eee0fa;
+    text-align: center;
+    
 }
 
 #container {
@@ -15,9 +18,10 @@
     overflow: hidden;
     border-radius: 7px;
     touch-action: none;
-    margin-top: 1em;
+    /* margin-top: 1em; */
     position: relative;
     flex-wrap: wrap;
+    margin: 0.5em;
   }
 
 header p {
@@ -28,6 +32,7 @@ h2 {
     display: inline;
     position: relative;
     top: 10%;
+    
 }
 
 #container p {
@@ -41,7 +46,7 @@ h2 {
     text-transform: lowercase;
 }
 
-p:hover {
+#container p:hover {
 cursor: move;
 }
 

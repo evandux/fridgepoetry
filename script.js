@@ -1,16 +1,35 @@
-var happyWords = 'in the morning lightHappiness is when How everything shines The sky is blue'.split(' ');
-moveWords();
-function moveWords(){
-for (var i =0; i<happyWords.length;i++) {
-    var newMagnet = document.createElement('p');
-    var newContent = document.createTextNode(happyWords[i]);
-    var mainDiv = document.getElementById('container');
-    mainDiv.appendChild(newMagnet);
-    newMagnet.appendChild(newContent);
+// different sets of words for mood
+var happyWords = 'in the morning light Happiness is when How everything shines The sky is blue'.split(' ');
+var sadWords = 'hello dark moody rabbit'.split(' ');
+var node= document.getElementById("container");
+function moveHappyWords(){
+    node.querySelectorAll('*').forEach(n => n.remove()); // remove all words before adding new ones
+    for (var i =0; i<happyWords.length;i++) {
+      var newMagnet = document.createElement('p');
+      var newContent = document.createTextNode(happyWords[i]);
+      var mainDiv = document.getElementById('container');
+      mainDiv.appendChild(newMagnet);
+      newMagnet.appendChild(newContent);
+      background = document.getElementById('container');
+      background.style.background = "#98E9F2";
 
 } 
 };
 
+function moveSadWords(){
+  node.querySelectorAll('*').forEach(n => n.remove()); // remove all words before adding new ones
+  for (var i =0; i<sadWords.length;i++) {
+      var newMagnet = document.createElement('p');
+      var newContent = document.createTextNode(sadWords[i]);
+      var mainDiv = document.getElementById('container');
+      mainDiv.appendChild(newMagnet);
+      newMagnet.appendChild(newContent);
+      background = document.getElementById('container');
+      background.style.background = "#ccc";
+  } 
+  };
+
+// make words draggable 
 var container = document.querySelector("#container");
 
     var activeItem = null;
