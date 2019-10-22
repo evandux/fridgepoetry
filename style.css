@@ -3,13 +3,15 @@
 #outerContainer {
     max-width: 95%;
     margin: 0 auto;
-    background-color: #eee0fa;
+    background-color: #aeaeae;
     text-align: center;
-    
+    border-radius: 10px;
+    padding-top: 0.5em;
+    padding-bottom: 0.001em;
 }
 
 #container {
-    height: 85vh;
+    height: 75vh;
     margin: 0 auto;
     background-color: #98e9f2;
     display: flex;
@@ -18,14 +20,14 @@
     overflow: hidden;
     border-radius: 7px;
     touch-action: none;
-    /* margin-top: 1em; */
     position: relative;
     flex-wrap: wrap;
-    margin: 0.5em;
+    margin: 0.5em;                  
   }
 
 header p {
     display: inline;
+    
 }
 
 h2 {
@@ -39,7 +41,7 @@ h2 {
     display: flex;
     padding: 0.2em 1em;
     background-color: #f2f2f2;
-    border: 1px solid black;
+    border: 1.4px solid black;
     margin: 0 0.1em;
     position: relative;
     top: 40%;
@@ -55,7 +57,6 @@ background-color: #ccc;
 display: inline;
 /* position: absolute; */
 padding: 1em;
-
 }
 
 form {
@@ -69,9 +70,15 @@ button {
     font-size: 1.2em;
     border: none;
     color: #fff;
-    padding: 0.3em 1em;
+    padding: 0.1em 1em;
     border-radius: 10px;
     cursor: pointer;
+    margin: 0 0.2em;
+    
+}
+button:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
 }
 
 #happybutton {
@@ -80,4 +87,15 @@ button {
 
 #sadbutton {
     background-color: darkslategray;
+}
+
+#funnybutton {
+    background-color: rgb(249, 243, 91);
+    color: rgb(70, 70, 70);
+}
+
+footer {
+    text-align:center;
+    font-style: italic;
+    color: #ccc;
 }
