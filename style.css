@@ -34,6 +34,9 @@ h2 {
     display: inline;
     position: relative;
     top: 10%;
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 0.2em;
     
 }
 

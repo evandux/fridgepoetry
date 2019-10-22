@@ -1,11 +1,19 @@
+/* Web 103 - Basic Web App and the Dom.
+App Name: Fridge Poetry
+Created by: Evan Dux
+Description: Inspired by the collections of fridge poetry magnets found on many fridges, this app gives users a set of words to drag around and make poems with. The set of words changes based on the mood that the user selects. I wanted to try and create something that is a little different from most of the websites that we visit from day to day. Fridge Poetry is meant to be a 10-20 minute activity where people can express their creative side. 
+ */
+
+
+
 // words for happy set of magnets
-var happyWords = 'in the morning light Happiness is when How everything shines The sky is blue'.split(' ');
+var happyWords = 'in the morning How light happiness is when shines everything The sky is blue'.split(' ');
 
 // words for sad set of magnets
-var sadWords = 'hello ending dark moody rabbit leave change understand rain what is happening cloud storm inside me'.split(' ');
+var sadWords = 'hello ending happening me dark moody rabbit storm leave change understand rain what is ! cloud inside'.split(' ');
 
 // words for funny set of magnets
-var funnyWords = 'laughter weird giggle bouncy frog taking time'.split(' ');
+var funnyWords = 'laughter bouncy weird giggle frog the sloshy taking time'.split(' ');
 
 var node= document.getElementById("container");
 
@@ -37,7 +45,7 @@ function moveSadWords(){
   } 
   };
 
-  // function for sad words button
+  // function for funny words button
 function moveFunnyWords(){
   node.querySelectorAll('*').forEach(n => n.remove()); // remove all words before adding new ones
   for (var i =0; i<funnyWords.length;i++) {
@@ -127,6 +135,8 @@ var container = document.querySelector("#container");
     function setTranslate(xPos, yPos, el) {
       el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
     }
+
+    
 
 
 
