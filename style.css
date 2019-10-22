@@ -99,3 +99,9 @@ footer {
     font-style: italic;
     color: #ccc;
 }
+
+@media only screen and (max-width: 600px) {
+    #container p {
+        font-size: 0.5em;
+    }
+  }
