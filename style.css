@@ -23,7 +23,8 @@
     touch-action: none;
     position: relative;
     flex-wrap: wrap;
-    margin: 0.5em;                  
+    margin: 0.5em;      
+                
   }
 
 header p {
@@ -43,7 +44,7 @@ h2 {
 
 #container p {
     display: flex;
-    padding: 0.2em 1em;
+    padding: 0.2em 0.5em;
     background-color: #f2f2f2;
     border: 1.4px solid black;
     margin: 0 0.1em;
@@ -51,7 +52,7 @@ h2 {
     top: 40%;
     text-transform: lowercase;
     flex-wrap: wrap;
-    
+    font-size: 0.9em;
 }
 
 #container p:hover {
@@ -108,6 +109,6 @@ footer {
 
 @media only screen and (max-width: 600px) {
     #container p {
-        font-size: 0.5em;
+        font-size: 0.6em;
     }
   }
