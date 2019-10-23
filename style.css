@@ -8,6 +8,7 @@
     border-radius: 10px;
     padding-top: 0.5em;
     padding-bottom: 0.001em;
+    padding-top: 1em;
 }
 
 #container {
@@ -26,8 +27,7 @@
   }
 
 header p {
-    display: inline;
-    
+    display: inline;  
 }
 
 h2 {
@@ -49,6 +49,7 @@ h2 {
     position: relative;
     top: 40%;
     text-transform: lowercase;
+    flex-wrap: wrap;
 }
 
 #container p:hover {
