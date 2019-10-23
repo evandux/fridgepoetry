@@ -3,7 +3,7 @@
 #outerContainer {
     max-width: 95%;
     margin: 0 auto;
-    background-color: #aeaeae;
+    background-color: #c1c1c1;
     text-align: center;
     border-radius: 10px;
     padding-top: 0.5em;
@@ -37,6 +37,7 @@ h2 {
     background-color: #fff;
     border: 1px solid black;
     padding: 0.2em;
+    align-content: stretch;
     
 }
 
@@ -50,6 +51,7 @@ h2 {
     top: 40%;
     text-transform: lowercase;
     flex-wrap: wrap;
+    
 }
 
 #container p:hover {
