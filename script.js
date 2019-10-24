@@ -13,7 +13,7 @@ var happyWords = 'in the morning How light happiness is when shines everything T
 var sadWords = 'hello ending happening me dark moody rabbit storm leave change understand rain what is ! cloud inside'.split(' ');
 
 // words for funny set of magnets
-var funnyWords = 'laughter bouncy weird giggle frog the sloshy taking time'.split(' ');
+var funnyWords = 'laughter surprising has bouncy hairless startled is toaster weird giggle a frog the tree slimy sloshy taking time'.split(' ');
 
 var node= document.getElementById("container");
 

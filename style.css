@@ -23,8 +23,8 @@
     touch-action: none;
     position: relative;
     flex-wrap: wrap;
-    margin: 0.5em;      
-                
+    margin: 0.5em;
+    flex-flow: row wrap;
   }
 
 header p {
@@ -109,6 +109,6 @@ footer {
 
 @media only screen and (max-width: 600px) {
     #container p {
-        font-size: 0.6em;
+        font-size: 0.7em;
     }
   }
