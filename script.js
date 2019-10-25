@@ -17,7 +17,7 @@ var funnyWords = 'laughter surprising has bouncy hairless startled is toaster we
 
 var node= document.getElementById("container");
 
-// function for happy words button
+// function to change wordset to happy words and style accordingly
 function moveHappyWords(){
     node.querySelectorAll('*').forEach(n => n.remove()); // remove all words in container before adding new ones
     for (var i =0; i<happyWords.length;i++) {
@@ -31,7 +31,7 @@ function moveHappyWords(){
 } 
 };
 
-// function for sad words button
+// function to change wordset to sad words and style accordingly
 function moveSadWords(){
   node.querySelectorAll('*').forEach(n => n.remove()); // remove all words in container before adding new ones
   for (var i =0; i<sadWords.length;i++) {
@@ -45,7 +45,7 @@ function moveSadWords(){
   } 
   };
 
-  // function for funny words button
+  // function to change wordset to funny words and style accordingly
 function moveFunnyWords(){
   node.querySelectorAll('*').forEach(n => n.remove()); // remove all words in container before adding new ones
   for (var i =0; i<funnyWords.length;i++) {
