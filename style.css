@@ -9,6 +9,11 @@
     padding-top: 0.5em;
     padding-bottom: 0.001em;
     padding-top: 1em;
+    background: no-repeat url("images/pixel_fridge.png");
+    background-size: 70px 120px;
+    background-position: 75% 1.1%; 
+    background-color: #dedede;
+    
 }
 
 #container {

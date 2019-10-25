@@ -19,7 +19,7 @@ var node= document.getElementById("container");
 
 // function for happy words button
 function moveHappyWords(){
-    node.querySelectorAll('*').forEach(n => n.remove()); // remove all words before adding new ones
+    node.querySelectorAll('*').forEach(n => n.remove()); // remove all words in container before adding new ones
     for (var i =0; i<happyWords.length;i++) {
       var newMagnet = document.createElement('p');
       var newContent = document.createTextNode(happyWords[i]);
@@ -33,7 +33,7 @@ function moveHappyWords(){
 
 // function for sad words button
 function moveSadWords(){
-  node.querySelectorAll('*').forEach(n => n.remove()); // remove all words before adding new ones
+  node.querySelectorAll('*').forEach(n => n.remove()); // remove all words in container before adding new ones
   for (var i =0; i<sadWords.length;i++) {
       var newMagnet = document.createElement('p');
       var newContent = document.createTextNode(sadWords[i]);
@@ -47,7 +47,7 @@ function moveSadWords(){
 
   // function for funny words button
 function moveFunnyWords(){
-  node.querySelectorAll('*').forEach(n => n.remove()); // remove all words before adding new ones
+  node.querySelectorAll('*').forEach(n => n.remove()); // remove all words in container before adding new ones
   for (var i =0; i<funnyWords.length;i++) {
       var newMagnet = document.createElement('p');
       var newContent = document.createTextNode(funnyWords[i]);
@@ -59,7 +59,8 @@ function moveFunnyWords(){
   } 
   };
 
-// make "magnets" draggable 
+/* make "magnets" draggable 
+ much of this script was sourced from https://www.kirupa.com/html5/drag.htm */
 var container = document.querySelector("#container");
 
     var activeItem = null;
