@@ -1,19 +1,27 @@
 /* Web 103 - Basic Web App and the Dom.
 App Name: Fridge Poetry
 Created by: Evan Dux
-Description: Inspired by the collections of fridge poetry magnets found on many fridges, this app gives users a set of words to drag around and make poems with. The set of words changes based on the mood that the user selects. I wanted to try and create something that is a little different from most of the websites that we visit from day to day. Fridge Poetry is meant to be a 10-20 minute activity where people can express their creative side. 
- */
+Description: Inspired by the collections of fridge poetry magnets found on many fridges, this app gives users a set of words to drag around and make poems with. The set of words changes based on the mood that the user selects. I wanted to try and create something that is a little different from most of the websites that we visit from day to day. Fridge Poetry is meant to be a 10-20 minute activity where people can express their creative side. In the future I would like to add more wordsets and fix a few bugs.
+======================================================================= */
 
+// object constructor for poems
+function Poem (mood,words) { 
+    this.mood = mood;
+    this.words = words;
+};
 
+// three different word "moods"
+var happy = new Poem (happy, 'in the morning How light happiness is when shines everything The sky is blue');
 
-// words for happy set of magnets
-var happyWords = 'in the morning How light happiness is when shines everything The sky is blue'.split(' ');
+var sad = new Poem (sad,'hello ending happening me dark moody rabbit storm leave change understand rain what is ! cloud inside');
 
-// words for sad set of magnets
-var sadWords = 'hello ending happening me dark moody rabbit storm leave change understand rain what is ! cloud inside'.split(' ');
+var funny = new Poem (funny, 'laughter surprising has bouncy hairless startled is toaster weird giggle a frog the tree slimy sloshy taking time');
 
-// words for funny set of magnets
-var funnyWords = 'laughter surprising has bouncy hairless startled is toaster weird giggle a frog the tree slimy sloshy taking time'.split(' ');
+// split strings from above objects into individual words
+var happyWords = happy.words.split(' ');
+var sadWords = sad.words.split(' ');
+var funnyWords = funny.words.split(' ');
+
 
 var node= document.getElementById("container");
 
